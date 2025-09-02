@@ -89,4 +89,27 @@ body {
   background: var(--accent);
   border-radius: 50%;
 }
+.hero.container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.hero__avatar {
+  flex-shrink: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.hero__info {
+  flex: 1;
+}
+@media (max-width: 600px) {
+  .hero.container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .hero__info {
+    text-align: center;
+  }
+}
 
