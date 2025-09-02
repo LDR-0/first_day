@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV Frontend Developer">
+  <title>CV Имя Фамилия</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+  <header id="top" class="site-header" role="banner">
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="#about" class="nav__link test test2">Обо мне</a>
+      <a href="#experience" class="nav__link">Опыт</a>
+      <a href="#skills" class="nav__link">Навыки</a>
+      <a href="#education" class="nav__link">Образование</a>
+      <a href="#projects" class="nav__link">Проекты</a>
+      <a href="#languages" class="nav__link">Языки</a>
+      <a href="#contacts" class="nav__link">Контакты</a>
+      <button id="themeToggle" class="btn btn--ghost" type="button" aria-pressed="false" aria-label="Переключить тему">🌓</button>
+    </nav>
+
+    <div class="hero container" data-reveal>
+      <img class="hero__avatar" src="ava.jpg" alt="Фото: Имя Фамилия" width="128" height="128" loading="lazy" />
+      <div class="hero__info">
+        <h1 class="hero__title">Имя Фамилия</h1>
+        <p class="hero__subtitle">Frontend Developer (HTML/CSS/JS)</p>
+        <ul class="hero__contacts">
+          <li><a href="mailto:you@example.com">you@example.com</a></li>
+          <li><a href="tel:+77001234567">+7 700 123-45-67</a></li>
+          <li><a href="https://github.com/username" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main" role="main">
+    <section id="about" class="section container" data-reveal>
+      <h2 class="section__title">Обо мне</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+  nisi ut aliquip ex ea commodo consequat. 
+  Duis aute irure dolor in reprehenderit in voluptate velit esse 
+  cillum dolore eu fugiat nulla pariatur. 
+  Excepteur sint occaecat cupidatat non proident, 
+  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <section id="experience" class="section container" data-reveal>
+      <h2 class="section__title">Опыт работы</h2>
+      <div class="experience-item">
+        <h3 class="experience-item__title">Frontend Developer</h3>
+        <p class="experience-item__company">Компания Z, Наш</p>
+        <p class="experience-item__date">Июнь 1984 — Август 2077</p>
+        <ul class="experience-item__responsibilities">
+          <li>Cupcake ipsum dolor sit amet chocolate bar tootsie roll.</li>
+          <li>Carrot cake macaroon croissant jelly beans. </li>
+          <li>Donut sweet roll tiramisu gummies ice cream wafer.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3 class="experience-item__title">Frontend Developer</h3>
+        <p class="experience-item__company">Компания ZZ, Город P</p>
+        <p class="experience-item__date">Март 2019 — Май 2021</p>
+        <ul class="experience-item__responsibilities">
+          <li>Synergize scalable paradigms to leverage holistic solutions. </li>
+          <li>Moving forward, our team will ideate robust frameworks to ensure.</li>
+          <li>seamless integration and optimize performance metrics.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section container" data-reveal>
+      <h2 class="section__title">Навыки</h2>
+      <ul class="skills-list">
+        <li>пупупу
+          <div class="progress-bar"><div class="progress" data-value="90"></div></div>
+        </li>
+        <li>хорошие
+          <div class="progress-bar"><div class="progress" data-value="80"></div></div>
+        </li>
+        <li>прекрасные
+          <div class="progress-bar"><div class="progress" data-value="75"></div></div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="education" class="section container" data-reveal>
+      <h2 class="section__title">Образование</h2>
+      <div class="education-item">
+        <h3 class="education-item__degree">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,</h3>
+        <p class="education-item__institution">Университет X, Город</p>
+        <p class="education-item__date">Февраль 1917 — Август 1991</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section container" data-reveal>
+      <h2 class="section__title">Проекты</h2>
+      <div class="project-item">
+        <h3 class="project-item__title">Проект 1</h3>
+        <p class="project-item__description">Описание проекта</p>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-item__link">Посмотреть проект</a>
+      </div>
+    </section>
+
+    <div id="modal" class="modal"><div class="modal__content" id="modalContent"></div></div>
+
+    <section id="languages" class="section container" data-reveal>
+      <h2 class="section__title">Языки</h2>
+      <ul class="languages-list">
+        <li>Русский — родной</li>
+        <li>Английский — B1 (Intermediate)</li>
+      </ul>
+    </section>
+
+    <section id="contacts" class="section container" data-reveal>
+      <h2 class="section__title">Контакты</h2>
+      <ul class="contacts-list">
+        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+        <li>Телефон: <a href="tel:+77001234567">8 800 555 35 35</a></li>
+        <li>GitHub: <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">github.com/username</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
